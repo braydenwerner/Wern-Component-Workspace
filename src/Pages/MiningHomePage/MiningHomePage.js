@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import { Slider } from '../../Components/exports'
+import { Slider, MiningStatDashboard } from '../../Components/exports'
 import { getMinerData } from '../../api/ethermineApi'
 
-export default function SliderPage() {
+export default function MiningHomePage() {
   const [minerData, setMinerData] = useState()
 
   useEffect(() => {
@@ -13,7 +13,7 @@ export default function SliderPage() {
 
   return (
     <>
-      <div>{minerData.time}</div>
+      <MiningStatDashboard minerData={minerData} />
       <Slider />
     </>
   )
