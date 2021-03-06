@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Slider, MiningStatDashboard } from '../../Components/exports'
+import { Slider, MiningStatSidebar } from '../../Components/exports'
 import { getMinerData } from '../../api/ethermineApi'
 
 export default function MiningHomePage() {
@@ -13,7 +13,7 @@ export default function MiningHomePage() {
 
   return (
     <>
-      <MiningStatDashboard minerData={minerData} />
+      <MiningStatSidebar minerData={minerData} />
       <Slider />
     </>
   )
