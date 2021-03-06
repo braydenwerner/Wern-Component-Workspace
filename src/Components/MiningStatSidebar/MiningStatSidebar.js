@@ -24,6 +24,7 @@ export default function MiningStatSidebar({ minerData }) {
         maxConstraints={[300, Infinity]}
         axis="x"
         resizeHandles={['e']}
+        handleSize={[150, 150]}
         onResize={(e, data) => handleResize(e, data)}
       >
         {showTextInResizableBox && <span>Contents</span>}
